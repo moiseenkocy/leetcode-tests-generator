@@ -140,7 +140,9 @@ line-ending = "auto"
 # docstring-code-line-length = "dynamic"
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = []
+"tests/*" = [
+    "D104",     # Missing docstring in public package
+]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
